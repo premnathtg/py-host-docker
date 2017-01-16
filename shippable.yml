@@ -3,7 +3,7 @@ language: none
 build:
   ci:
     - echo 'CI Running'
-    - export IMAGE_NAME=680976004409.dkr.ecr.us-east-1.amazonaws.com/ncrawler
+    - export IMAGE_NAME=680976004409.dkr.ecr.us-east-1.amazonaws.com/selenium
     - sudo docker build -t $IMAGE_NAME:$BRANCH.$BUILD_NUMBER .
     
   post_ci:
