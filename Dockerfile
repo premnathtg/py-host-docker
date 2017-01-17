@@ -4,4 +4,5 @@ RUN apt-get install python2.7 python-pip wget -y
 RUN pip install selenium
 ADD RemoteTest.py /root
 RUN chmod +x /root/RemoteTest.py
-CMD sleep 30s && python /root/RemoteTest.py && sleep 120s
+CMD sleep 30s && python /root/RemoteTest.py 
+CMD && sleep 180s
